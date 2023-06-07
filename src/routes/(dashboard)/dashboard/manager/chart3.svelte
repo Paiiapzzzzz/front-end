@@ -1,6 +1,6 @@
 <script>
   import { Bar } from 'svelte-chartjs';
-  import { data} from './data.js';
+  import { data} from './data3';
   
   import {
     Chart,

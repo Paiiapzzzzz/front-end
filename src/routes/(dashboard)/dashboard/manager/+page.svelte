@@ -5,6 +5,8 @@
   import { DateInput } from "date-picker-svelte";
     import { onMount } from "svelte";
     import data from "../../../../data.json";
+    import Chart2 from "./chart2.svelte";
+    import Chart3 from "./chart3.svelte";
   //import Chart from 'chart.js/auto';
     const a = data;
   let date = new Date();
@@ -13,7 +15,7 @@
 
   async function fetchData() {
     // Fetch the data based on the selected date
-    console.log(date)
+    console.log(1)
     // try {
     //   const response = await fetch("http://localhost:5000/finance/GeneralJournal", {
     //     method: "POST",
@@ -34,10 +36,9 @@
   }
 </script>
 
-<!-- <Datepicker  /> -->
+
 <main>
-  <!-- <Datepicker datepickerButtons /> -->
-  <!-- <Datepicker  /> -->
+
   <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select </label>
   <select bind:value={selected} on:change={() => fetchData()} id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
     <option selected>DATE</option>
@@ -93,18 +94,22 @@
       </Card>
     {/each}
   </div>
-  <!-- 
   <div class="grid2 grid-cols-2 gap-8 mb-10 mt-10">
     <div class="chart-container">
-      <p />
-      <Chart  />
+      <p>Average waiting time at each station </p> 
+      <Chart2 />
     </div>
     <div class="chart-container">
-      <p />
+      <p>Number of failed time at each station </p> 
       <Chart  />
     </div>
-  </div> -->
-
+    <div class="grid4 grid-cols-1 gap-8 mb-10 mt-10">
+  <div class="chart-container2 ">
+    <p>Schedule Utilization </p>
+    <Chart3  />
+  </div>
+</div>
+</div>
   <div class="grid3 grid-cols-2 gap-16 center-cards mb-10 mt-10">
     {#each items as item}
       <Card>
@@ -157,6 +162,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
+  .grid4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    flex: center;
+  }
   .chart-container {
     max-width: 400px;
     margin: 0 auto;
@@ -169,5 +180,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .chart-container2 {
+    max-width: 600px;
+    margin: 0 auto;
   }
 </style>

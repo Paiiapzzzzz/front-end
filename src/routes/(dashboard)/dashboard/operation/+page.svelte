@@ -1,8 +1,10 @@
-<script>
+`<script>
   import { Card } from "flowbite-svelte";
   import Chart from "./chart.svelte";
+  
   import { DateInput } from "date-picker-svelte";
   import data from "../../../../data.json";
+    import Chart2 from "./chart2.svelte";
   //import Chart from 'chart.js/auto';
   const a = data;
   let date = new Date();
@@ -75,11 +77,11 @@
 
   <div class="grid2 grid-cols-2 gap-8 mb-10 mt-10">
     <div class="chart-container">
-      <p />
-      <Chart  />
+      <p>Average waiting time at each station </p> 
+      <Chart2 />
     </div>
     <div class="chart-container">
-      <p />
+      <p>Number of failed time at each station </p> 
       <Chart  />
     </div>
   </div>
@@ -136,3 +138,4 @@
     align-items: center;
   }
 </style>
+`
