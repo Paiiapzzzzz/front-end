@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
- // import data from "../../data.json";
-  //const a = data;
+ import data from "../../../../data.json";
+  const a = data;
   import {
     Table,
     TableBody,

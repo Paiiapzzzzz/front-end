@@ -19,10 +19,7 @@
     { name: "Purchase Order", href: "/dashboard/order" },
     { name: "Paid Sale Invoice", href: "/dashboard/invoice" },
   ];
-  let menu1 = [
-    { name: "Weekly Manager ", href: "/dashboard/managerweek" },
-    { name: "Monthly Manager", href: "/dashboard/managermonth" },
-  ];
+
   let menu2 = [
     { name: "Tracking time", href: "/dashboard/searchtrack" },
     { name: "Service time", href: "/dashboard/searchservice" },
@@ -60,20 +57,9 @@
       />
     </MegaMenu>
     <NavLi href="/dashboard/operation">Operation Dashboard</NavLi>
-    <NavLi><Chevron aligned>Manager Dashboard</Chevron></NavLi>
-    <MegaMenu full items={menu1} let:item>
-      <a
-        href={item.href}
-        class="hover:underline hover:text-blue-600 dark:hover:text-blue-500"
-        >{item.name}</a
-      >
-      <a
-        slot="extra"
-        class="block mt-4 p-4 text-left bg-local bg-center bg-no-repeat bg-cover rounded-lg bg-blend-multiply hover:bg-blend-soft-light dark:hover:bg-blend-darken"
-        style="background-image: url(/images/nature-1.webp)"
-      />
-    </MegaMenu>
-
+    <NavLi href="/dashboard/manager">Manager Dashboard</NavLi>
+    
+    
     <NavLi><Chevron aligned>Search Truck</Chevron></NavLi>
     <MegaMenu full items={menu2} let:item>
       <a

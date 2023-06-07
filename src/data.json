@@ -1,17 +1,48 @@
-{
-  "FY2021": [
-    { "framework": "SvelteKit", "score": 96 },
-    { "framework": "Astro", "score": 91 },
-    { "framework": "Fastify", "score": 91 },
-    { "framework": "Next.js", "score": 91 },
-    { "framework": "Remix", "score": 91 },
-    { "framework": "Express", "score": 88 },
-    { "framework": "Nest", "score": 85 },
-    { "framework": "Eleventy", "score": 82 },
-    { "framework": "Nuxt", "score": 82 },
-    { "framework": "Strapi", "score": 76 },
-    { "framework": "Blitz", "score": 67 },
-    { "framework": "Redwood", "score": 67 },
-    { "framework": "Gatsby", "score": 51 }
-  ]
-}
+[
+   
+  {
+    "Date": "2023-03-01 00:00:00",
+    "Amountdiesel": "984315.62",
+    "Amountgas95": "167162.04",
+    "Notruckin": "125",
+    "Notruckout": "121",
+    "Avgwaittimeso": "7.778711466",
+    "Avgwaittimeib": "35.26006333",
+    "Avgwaittimeob": "3.755991667",
+    "Avgwaittimediesel": "86.61012928",
+    "avgwaittimegas95": "1.873413889",
+    "avgservicetimeso": "10.8263172",
+    "avgservicetimeob": "7.465397678",
+    "avgservicetimeib": "7.5121504",
+    "avgservicetimediesel": "45.99605701",
+    "avgservicetimegas95": "46.4339",
+    "totalwip": "4",
+    "faildiesel": "0",
+    "failgas95": "1",
+    "avgcycletime": "118.233822288",
+    "ID": "1"
+  },
+  {
+    "Date": "2023-05-01 00:00:00",
+    "Amountdiesel": "984315.62",
+    "Amountgas95": "167162.04",
+    "Notruckin": "125",
+    "Notruckout": "121",
+    "Avgwaittimeso": "7.778711466",
+    "Avgwaittimeib": "35.26006333",
+    "Avgwaittimeob": "3.755991667",
+    "Avgwaittimediesel": "86.61012928",
+    "avgwaittimegas95": "1.873413889",
+    "avgservicetimeso": "10.8263172",
+    "avgservicetimeob": "7.465397678",
+    "avgservicetimeib": "7.5121504",
+    "avgservicetimediesel": "45.99605701",
+    "avgservicetimegas95": "46.4339",
+    "totalwip": "4",
+    "faildiesel": "0",
+    "failgas95": "1",
+    "avgcycletime": "118.233822288",
+    "ID": "1"
+  }
+
+]
